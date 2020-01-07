@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+nav, ul{
+    list-style: none;
+}
+
+a{
+    color: gray;    
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+    color: black;
+}
+
+/* HEADER */
+
+header{
+
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+
+header img{
+    width: 50px;
+}
+
+header nav{
+    display: flex;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+}
+
+/* SOBRE */
+
+.sobre{
+    background-image: url(../img/img-1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sobre h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.sobre h4{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.sobre .modal-btn{
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 700px){
+    .sobre .modal-btn{
+        padding: 15px 40px;
+    }
+}
+/* REGRAS */
+
+.regras{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    width: 40%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    color: gray;
+}
+
+.regras h4{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.regras li{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px){
+    .regras{
+        width: 70%;
+    }
+    .regras h4{
+        font-size: 2.5rem;
+    }
+}
+
+/* GAMES */
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    flex-direction: column;
+    color: gray;
+}
+
+.game div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game h4{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.game p{
+    justify-content: center;
+    
+}
+
+.game #imgVez{
+    margin: 15px 0;
+    width: 15px;
+}
+
+.game #imgJogada{
+    position: absolute;
+    width: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.game table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 50px;
+    outline: none;
+    table-layout: fixed;
+}
+
+.game button{
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #882121;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .game h4{
+        font-size: 2.5rem;
+    }
+}
+
+/* MODAL GAME*/
+
+.modal-bg-jogo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active-jogo{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-jogo{
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-jogo img{
+    width: 30px;
+}
+
+.modal-jogo i{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.modal-jogo h4{
+    font-size: 2.5rem;
+}
+
+@media (max-width: 700px){
+    .modal-jogo{
+        width: 70%;
+    }
+}
+
+/* CONTATO */
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+    color: gray;
+}
+
+.contato h4{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.contato p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contato hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 50px;
+    background-color: gray;
+    border: none;
+}
+
+.contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.contato input{
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+
+}
+
+.contato button{
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #459b45;
+    color: white;
+    border-radius: 4px;
+}
+
+@media (max-width: 700px){
+    .contato input{
+        margin-bottom: 15px;
+    }
+    .contato h4{
+        font-size: 2.5rem;
+    }
+}
+
+/* MODAL CONTATO*/
+
+.modal-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    background-color: white;
+    width: 50%;
+    height: 30%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal i{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px){
+    .modal{
+        width: 70%;
+    }
+}
+/* FOOTER */
+
+footer{
+    background-color: rgb(35, 37, 35);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px;
+    align-items: center;
+    color: gray;
+}
+
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li{
+    margin-right: 10px;
+}
+
+footer ul li:last-child{
+    margin-right: 0;
+}
+
+footer  ul li a {
+    color: gray;
+    font-size: 2rem;
+}

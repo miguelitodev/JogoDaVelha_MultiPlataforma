@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Jogo da velha</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/4d91328770.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="">
+            <img src="./img/icon.png">
+        </a>
+        <nav>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#regras">Regras</a></li>
+            <li><a href="#game">Jogo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </nav>
+    </header>
+
+    <section class="sobre" id="sobre">
+        <h1>O jogo da velha!</h1>
+        <h4>O mais novo jogo da velha para você jogar no seu computador ou celular.</h4>
+        <button class="modal-btn">Saiba mais</button>
+    </section>
+
+    <section class="regras" id="regras">
+        <h4>Como jogar?</h4>
+        <ul>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                O tabuleiro é uma matriz de três linhas por três colunas;
+            </li>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                Dois jogadores escolhem uma marcação cada um, geralmente um círculo
+                (O) e um xis (X);
+            </li>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                Os jogadores jogam alternadamente, uma marcação por vez, numa lacuna
+                que esteja vazia.
+            </li>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                O objetivo é conseguir três círculos ou três xis em linha, quer
+                horizontal, vertical ou diagonal , e ao mesmo tempo, quando possível, impedir o adversário de ganhar na
+                próxima jogada.
+            </li>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                Quando um jogador conquista o objetivo, costuma-se riscar os três
+                símbolos.
+            </li>
+            <li>
+                <i class="fas fa-arrow-right"></i>
+                Se os dois jogadores jogarem sempre da melhor forma, o jogo terminará
+                sempre em empate.
+            </li>
+        </ul>
+    </section>
+
+    <section class="game" id="game">
+
+        <h4>O jogo</h4>
+
+        <div id="vez">
+            <p>Quem joga agora:</p>
+            <img id="imgVez" src="">
+        </div>
+
+        <table>
+            <tr>
+                <td id="a1" class="espacos" jogada=""></td>
+                <td id="a2" class="espacos" jogada=""></td>
+                <td id="a3" class="espacos" jogada=""></td>
+            </tr>
+            <tr>
+                <td id="b1" class="espacos" jogada=""></td>
+                <td id="b2" class="espacos" jogada=""></td>
+                <td id="b3" class="espacos" jogada=""></td>
+            </tr>
+            <tr>
+                <td id="c1" class="espacos" jogada=""></td>
+                <td id="c2" class="espacos" jogada=""></td>
+                <td id="c3" class="espacos" jogada=""></td>
+            </tr>
+        </table>
+
+        <button class="btn-reiniciar" onclick="reiniciar()">
+            Reiniciar
+        </button>
+
+        <div class="modal-bg-jogo" id="modalJogo">
+            <div class="modal-jogo">
+                <i class="fas fa-trophy"></i>
+                <h4>O vencedor é o jogador:</h4>
+                <img src="">
+                <button class="modal-close-jogo">Fechar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+        <h4>Newsletter</h4>
+        <p>Assine para receber noticias sobre os próximos games ou atualizações.</p>
+        <hr>
+
+        <form>
+            <input type="text" placeholder="Email">
+            <button class="modal-btn">Assinar</button>
+        </form>
+
+        <div class="modal-bg">
+            <div class="modal">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Este serviço não está disponível no momento :(</p>
+                <button class="modal-close">Fechar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/miguelrisquelme"><i class="fab fa-facebook"></i> </a></li>
+            <li><a href="https://twitter.com/miguelrisquelme"><i class="fab fa-twitter"></i> </a></li>
+            <li><a href="https://github.com/miguelrisquelme"><i class="fab fa-github"></i> </a></li>
+            <li><a href="https://br.pinterest.com/miguelrisquelme/"><i class="fab fa-pinterest"></i> </a></li>
+        </ul>
+
+        <p>Desenvolvido por Miguel Riquelme</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

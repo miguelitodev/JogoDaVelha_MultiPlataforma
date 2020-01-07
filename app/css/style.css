@@ -92,7 +92,7 @@ header li:last-child{
     margin-bottom: 15px;
 }
 
-.sobre .modal-btn{
+.sobre .modal-btn-sobre{
     padding: 20px 50px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -101,10 +101,69 @@ header li:last-child{
 }
 
 @media (max-width: 700px){
-    .sobre .modal-btn{
+    .sobre .modal-btn-sobre{
         padding: 15px 40px;
     }
 }
+
+/* MODAL SOBRE */
+
+.modal-bg-sobre{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active-sobre{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-sobre{
+    color: gray;
+    background-color: white;
+    width: 50%;
+    height: 30%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-sobre i{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.modal-close-sobre{
+    padding: 15px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #459b45;
+    color: #fff;
+}
+
+
+@media (max-width: 700px){
+    .modal-sobre{
+        width: 70%;
+        height: 40%;
+    }
+}
+
 /* REGRAS */
 
 .regras{
@@ -258,6 +317,10 @@ header li:last-child{
 @media (max-width: 700px){
     .modal-jogo{
         width: 70%;
+        height: 40%;
+    }
+    .modal-jogo h4{
+        font-size: 1.2rem;
     }
 }
 
@@ -329,7 +392,7 @@ header li:last-child{
 
 /* MODAL CONTATO*/
 
-.modal-bg{
+.modal-bg-contato{
     position: fixed;
     left: 0;
     top: 0;
@@ -345,12 +408,12 @@ header li:last-child{
     transition: visibility 0s, opacity 0.5s;
 }
 
-.bg-active{
+.bg-active-contato{
     visibility: visible;
     opacity: 1;
 }
 
-.modal{
+.modal-contato{
     background-color: white;
     width: 50%;
     height: 30%;
@@ -361,13 +424,13 @@ header li:last-child{
     flex-direction: column;
 }
 
-.modal i{
+.modal-contato i{
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 @media (max-width: 700px){
-    .modal{
+    .modal-contato{
         width: 70%;
     }
 }

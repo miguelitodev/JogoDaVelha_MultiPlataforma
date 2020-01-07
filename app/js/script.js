@@ -112,17 +112,32 @@ function reiniciar() {
 
 /* MODAL CONTATO*/
 
-var modalBtn = document.querySelector('.modal-btn');
-var modalBg = document.querySelector('.modal-bg');
-var modalClose = document.querySelector('.modal-close');
+var modalBtnContato = document.querySelector('.modal-btn-contato');
+var modalBgContato = document.querySelector('.modal-bg-contato');
+var modalCloseContato = document.querySelector('.modal-close-contato');
 
-modalBtn.addEventListener('click', function(e){
-    modalBg.classList.add('bg-active'); 
+modalBtnContato.addEventListener('click', function(e){
+    modalBgContato.classList.add('bg-active-contato'); 
      e.preventDefault();
 });
 
-modalClose.addEventListener('click', function(){
-    modalBg.classList.remove('bg-active');
+modalCloseContato.addEventListener('click', function(){
+    modalBgContato.classList.remove('bg-active-contato');
+});
+
+/* MODAL SOBRE */
+
+var modalBtnSobre = document.querySelector('.modal-btn-sobre');
+var modalBgSobre = document.querySelector('.modal-bg-sobre');
+var modalCloseSobre = document.querySelector('.modal-close-sobre');
+
+modalBtnSobre.addEventListener('click', function(e){
+    modalBgSobre.classList.add('bg-active-sobre'); 
+     e.preventDefault();
+});
+
+modalCloseSobre.addEventListener('click', function(){
+    modalBgSobre.classList.remove('bg-active-sobre');
 });
 
 /* MODAL JOGO */

@@ -67,7 +67,7 @@ async function verificarVencedor() {
 
     var vencedor = "";
 
-    if((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 & a1 == a3 && a1 != "") || (a1 == a2 && a1 == c3 && a1 != "")){
+    if((a1 == b1 && a1 == c1 && a1 != "") || (a1 == a2 & a1 == a3 && a1 != "") || (a1 == b2 && a1 == c3 && a1 != "")){
         vencedor = a1;
     } else if((b2 == b1 && b2 == b3 && b2 != "") || (b2 == a2 && b2 == c2 && b2 != "") || (b2 == a3 && b2 == c1 && b2 != "")){
         vencedor = b2;
